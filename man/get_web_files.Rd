@@ -45,9 +45,7 @@ output:
     css:
       - default
       - xaringan-themer.css
-      - www/theme-modes.css
     includes:
-      in_header: www/theme-selector.html
 }
 }
 \examples{

@@ -4,6 +4,7 @@ subtitle: ""
 author: 
   - "Dave Armstrong"
 date: ''
+lang: en
 output:
   xaringan::moon_reader:
     seal: true
@@ -11,11 +12,9 @@ output:
     css: 
       - default
       - xaringan-themer.css
-      - www/theme-modes.css
       - www/layout.css
     includes:
       in_header: 
-        - www/theme-selector.html
         - www/mathjax.html
     nature: 
       navigation:
@@ -64,15 +63,19 @@ htmltools::tagList(
 )
 
 style_duo_accent(
-  primary_color = okabe_ito_cols()[1], 
-  secondary_color = okabe_ito_cols()[2],
+  # primary_color = okabe_ito_cols()[1], 
+  # secondary_color = okabe_ito_cols()[2],
+  primary_color = "#4f2683", 
+  secondary_color = "#9182ae", 
   inverse_header_color = "#FFFFFF", 
+  inverse_text_color = "#ffffff",
   # header_font_google = google_font("Source Sans 3", "600"),
   text_font_google   = google_font("Atkinson Hyperlegible", "300", "300i", "400", "400i", "500", "500i", 
                                    "600", "600i", "700", "700i", "800", "800i", "900", "900i", "1000", "1000i"),
-  code_font_google = google_font("JetBrains Mono", "300", "300i", "400", "400i", "500", "500i", "600", "600i", "700", "700i"), 
+  code_font_google = google_font("Source Code Pro", "300", "300i", "400", "400i", "500", "500i", "600", "600i", "700", "700i"), 
   colors = okabe_ito_cols()
 )
+
 library(ggplot2)
 library(latex2exp)
 library(tidyverse)

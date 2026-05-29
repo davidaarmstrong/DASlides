@@ -33,9 +33,7 @@
 #'     css:
 #'       - default
 #'       - xaringan-themer.css
-#'       - www/theme-modes.css
 #'     includes:
-#'       in_header: www/theme-selector.html
 #' }
 #'
 #' @return Invisibly returns \code{NULL}. Called for its side effects.
@@ -47,14 +45,10 @@
 #'
 #' @export
 get_web_files <- function(...){
-  cssf <- system.file("css", "theme-modes.css", package="DAslides")
   layf <- system.file("css", "layout.css", package="DAslides")
-  self <- system.file("html", "theme-selector.html", package="DAslides")
   mjxf <- system.file("html", "mathjax.html", package="DAslides")
   dir.create("www", showWarnings = FALSE)
-  file.copy(cssf, "www/theme-modes.css", overwrite = TRUE)
   file.copy(layf, "www/layout.css", overwrite = TRUE)
-  file.copy(self, "www/theme-selector.html", overwrite = TRUE)
   file.copy(mjxf, "www/mathjax.html", overwrite = TRUE)
   message("Files copied to www/ directory.\n")
 }
