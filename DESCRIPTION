@@ -1,0 +1,12 @@
+Package: DAslides
+Type: Package
+Title: Dave Armstrong's RMD Slide Templates
+Version: 0.1.0
+Authors@R: person("Dave", "Armstrong", , email="davearmstrong.ps@gmail.com", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0002-9358-2489"))
+Description: RMarkdown slide templates for xaringan
+Imports: ggplot2
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.3.3
